@@ -1,0 +1,29 @@
+GitHub服务器上有一个主仓库，这里用来储存你的所有代码，如果不付费的话是所有人都可以看的，如果你不想让别人看到你的代码，可以选择付费仓库.
+获取密匙:
+$ ssh-keygen -t rsa -C "18685026614@163.com"
+在相应目录下找到 .pub 文件 用notepad++打开
+
+登录GitHub 打开设置 – New SSH key
+
+回到Git bash 输入命令：
+$ ssh –T git@github.com
+
+设置一些东西：
+$ git config –global user.name “shenxian2020”
+$ git config –global user.email “18685026614@163.com”
+
+下面就要将你的库克隆下来到本地电脑中，方便以后进行上传代码
+现创建一个工作空间 比如 F:/GitHubSpace
+然后执行命令：
+$ git clone https://github.com/shenxian2020/test.git
+在工作空间下创建一个任意格式的文件 比如： test.txt
+$ cd /F/GitHubSpace/test
+$ ls
+$ git add test.txt
+之后输入然后$ git commit -m "cc"  引号内的内容可以随意改动，这个语句的意思是 给你刚刚上传的文件一个备注，方便查找记忆
+然后在输入git push origin master
+(git add 、git commit -m "   " 、最后git push origin master) 提交代码
+
+
+
+
